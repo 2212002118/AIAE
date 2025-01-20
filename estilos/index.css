@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .article-contenedor {
-  border: solid black;
+  /* border: solid black; */
   text-align: center;
 }
 .partes-intengrante {
@@ -12,6 +12,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 2px;
 
   padding-top: 13px;
   padding-bottom: 13px;
