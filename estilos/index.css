@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.article-contenedor {
+  border: solid black;
+  text-align: center;
+}
+.partes-intengrante {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.color1 {
+  background-color: aqua;
+}
+.color2 {
+  background-color: rgb(160, 244, 216);
+}
