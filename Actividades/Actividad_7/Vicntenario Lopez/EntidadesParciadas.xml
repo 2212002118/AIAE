@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Declaración del documento XML -->
+
+<!DOCTYPE nodo_raiz [
+    <!ENTITY PL "Es necesario contar con 437 creditos y hacer un proyecto de integración">
+]>
+
+<nodo_raiz>
+    <!-- Información del estudiante -->
+    <nombre> Jose Vicente López López </nombre> <!-- Nombre completo del estudiante -->
+    
+    <nombre> 
+        <nombres> Jose Vicente </nombres> <!-- Nombres separados -->
+        <apellidos> López López </apellidos> <!-- Apellidos separados -->
+    </nombre>
+    
+    <!-- Información de la carrera -->
+    <carrera mat="2212002118"> Ingenieria en Computación</carrera> <!-- Carrera con matrícula -->
+
+    <nombre>  </nombre> <!-- Elemento nombre vacío -->
+    <nombre/> <!-- Elemento nombre vacío (otra forma) -->
+
+    <!-- Información adicional de la carrera -->
+    <carrera mat="2212002118" pais="México" trimestre="9" edad="21">
+        Ing Computación <!-- Nombre de la carrera -->
+    </carrera>
+    
+    <TERM> Es necesario el &PL; </TERM> <!-- Uso de la entidad PL en el contenido -->
+
+    <EtiquetaPredefinida>
+        Las unidades(U) de la UAM son: U&gt;2 &amp; U&lt;6. Algunas iniciales son: &quot;AZC&quot; &amp; &apos;CUA&apos; etc..
+        <!-- Información sobre unidades y abreviaturas -->
+    </EtiquetaPredefinida>
+
+    <carrera mat="2212002118" pais="México" trimestre="9" edad="21"> </carrera> <!-- Carrera vacía -->
+    <carrera mat="2212002118" pais="México" trimestre="9" edad="21"/> <!-- Carrera vacía (otra forma) -->
+
+    <![CDATA[
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>Mi Primera Página</title>
+        </head>
+        <body>
+        <h1>¡Bienvenido a mi página web!</h1>
+        <p>Este es un ejemplo de un párrafo en HTML.</p>
+        </body>
+        </html>
+    ]]>
+    <!-- Sección de código HTML dentro de CDATA para evitar el parseo por el XML -->
+</nodo_raiz>

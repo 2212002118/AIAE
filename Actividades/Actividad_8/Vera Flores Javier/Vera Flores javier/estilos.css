@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+h1, h2 {
+    text-align: center;
+}
+.catalogo-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Para que los catálogos se apilen uno debajo de otro */
+    align-items: center;
+}
+.catalogo {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 80%; /* Limita el ancho de cada catálogo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.catalogo h3 {
+    text-align: center;
+    color: #333;
+}
+.producto-lista {
+    display: flex;
+    justify-content: space-between; /* Alinea los productos de manera horizontal */
+    gap: 20px; /* Espacio entre los productos */
+    margin-top: 15px;
+    flex-wrap: wrap; /* Permite que los productos se ajusten en la fila si no hay suficiente espacio */
+}
+.producto-item {
+    width: 30%; /* Establece que cada producto ocupe el 30% del ancho disponible */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.producto-item strong {
+    color: #4CAF50;
+}
+.proveedor {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.proveedor span {
+    display: block;
+}
+.comment-section {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.comment-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}

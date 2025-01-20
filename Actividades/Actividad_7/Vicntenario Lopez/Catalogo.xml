@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet href="text/xsl" type="Catalogo.xsl"?>
+<!DOCTYPE Productos [
+    <!ENTITY c1 "Carne de res">
+    <!ENTITY fv1 "Manzanas">
+    <!ENTITY b1 "Jugo de naranja">
+    <!ENTITY p1 "Pan de caja">
+    <!ENTITY l1 "Detergente líquido">
+]>
+
+<Productos>
+    
+    <producto area="Carnes rojas" disponible="90kg" UnidadMedida="Kg" proovedor="Carne Pantera" compraMinima="1gr">
+        &c1; 
+    </producto>
+
+    <producto area="Frutas y verduras" disponible="150kg" UnidadMedida="Kg" proveedor="Frutas del Sol" compraMinima="1gr"> 
+        &fv1; 
+    </producto>
+
+    <producto area="Bebidas" disponible="200L" UnidadMedida="L" proveedor="Bebidas Frescas" compraMinima="1L">
+        &b1;
+    </producto>
+
+    <producto area="Panadería" disponible="100 unidades" UnidadMedida="Unidades" proveedor="Panterita" compraMinima="1 unidad">
+        &p1; 
+    </producto>
+
+    <producto area="Limpieza" disponible="75 unidades" UnidadMedida="Unidades" proveedor="Limpieza Total" compraMinima="1 unidad"> 
+        &l1; 
+    </producto>
+
+</Productos>

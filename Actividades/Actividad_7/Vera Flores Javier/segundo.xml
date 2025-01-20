@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE ejemplo_entities [
+    <!ENTITY SL "Te saludo">
+]>
+<!-- Aqui se establece la cabecera -->
+<universidad>
+    <nombre>
+    ABPS
+    </nombre>
+
+    <carrera mat="123">
+        ciencias de la computacion
+    </carrera>
+    
+    <nombre>
+       
+    </nombre>
+    <nombres> 
+        <nombre> Javier</nombre>
+        <nombre>Aczayacatl</nombre>
+        <apellido>Vera</apellido>
+        <apellido>Flores </apellido>
+        
+    </nombres>
+
+    <nombre/>
+
+    <carrera mat="123" pais="dinamarca" duracion="12hrs" inscritos="34">
+        ciencias de la computacion
+    </carrera>
+    <!-- <!ENTITY SL "Te saludo"> -->
+    <TERM> Hola buen día &SL;</TERM>
+    <!-- Primer comentario -->
+    <etiq_predefinida>    
+        Las unidades de la UAM son: ADSI &amp; AIAE para mi AIAE es &lt; que ADSI aunque supongo que para algunos es &gt; &quot; De cualquier forma da igual!!&quot;    
+    </etiq_predefinida>    
+    <carrera mat="123" pais="dinamarca" duracion="12hrs" inscritos="34"/>
+    <!-- esta no es una sintaxis corrrecta -->
+    <!-- < mat="123" pais="dinamarca" duracion="12hrs" inscritos="34"/> -->
+<!-- incrporar entidades predefinidas -->
+<!-- <![[]]> -->
+
+
+</universidad>

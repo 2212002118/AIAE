@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="tercero.xsl"?>
+<!-- se añader un segunda cabecera y se referencia a el archivo tercero.xsl -->
+<!DOCTYPE ejemplo_entities [
+    <!ENTITY SL "Te saludo">
+]>
+<!-- Aqui se establece la cabecera -->
+<catalogo>
+     <TERM> Hola buen día &SL;</TERM>
+    <!-- Primer comentario -->
+    <etiq_predefinida>    
+        Te presentamos nuestro catalogos disponibles &amp; algunas sugerencias para  tu nuevo look es &lt; que no tener una guia aunque supongo que para algunos es &gt; &quot; De cualquier forma da igual!!&quot;    
+    </etiq_predefinida>    
+
+    <nombreCatalogo id="primavera" mes="marzo" precio="222">
+        <provedor> 
+            <nombre> Juan</nombre>
+            <nombre>Rodriguez</nombre>
+            <apellido>Fonseca</apellido>
+            <apellido>Figueroa </apellido>
+        </provedor>
+        <productos>
+            <gafas>Gafas de color azul</gafas>
+            <pantalones>Skiny blue</pantalones>
+            <playera>Playera roja mediana</playera>
+        </productos>
+
+    </nombreCatalogo>
+
+    <nombreCatalogo id="Verano" mes="abril" precio="500">
+        <provedor> 
+            <nombre> Joaquin</nombre>
+            <nombre>Dominguez</nombre>
+            <apellido>Gonzalo</apellido>
+            <apellido>Samien </apellido>
+        </provedor>
+        <productos>
+            <gafas>Gagas de color verde</gafas>
+            <pantalones>super Skiny black Jeans</pantalones>
+            <playera>playera Magenta</playera>
+        </productos>
+    </nombreCatalogo>
+    
+    <nombreCatalogo id="otoño" mes="Octubre" precio="200">
+        <provedor> 
+            <nombre> Laura</nombre>
+            <nombre>Juana</nombre>
+            <apellido>Fonseca</apellido>
+            <apellido>Flores </apellido>
+        </provedor>
+        <productos>
+            <gafas>Gagas de color rojo</gafas>
+            <pantalones>Overside blue cian</pantalones>
+            <playera>playera verde</playera>
+        </productos>
+    </nombreCatalogo>
+
+    <nombreCatalogo id="Invierno" mes="dicienbre" precio="200">
+        <provedor> 
+            <nombre> Karla</nombre>
+            <nombre>.</nombre>
+            <apellido>Fonseca</apellido>
+            <apellido>Hernandez </apellido>
+        </provedor>
+        <productos>
+            <gafas>Gagas de color amarillo</gafas>
+            <pantalones>Overside blue cian</pantalones>
+            <playera>playera blanca</playera>
+        </productos>
+    </nombreCatalogo>
+
+    <nombreCatalogo id="año-nuevo" mes="dicienbre" precio="200">
+        <provedor> 
+            <nombre> Patricia</nombre>
+            <nombre>.</nombre>
+            <apellido>tampico</apellido>
+            <apellido>Hernandez </apellido>
+        </provedor>
+        <productos>
+            <gafas>gafas de sol</gafas>
+            <pantalones>small fit jeans</pantalones>
+            <playera>playera naranja</playera>
+        </productos>
+    </nombreCatalogo>
+
+
+
+
+</catalogo>

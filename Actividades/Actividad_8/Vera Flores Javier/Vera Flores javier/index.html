@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de html VFJ ;)</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <body>
+        <div>
+            <!-- Cabecera (header) de título -->
+            <h1>Catalogo de Productos</h1>
+            <h2>Disponibles por temporada</h2>
+        </div>
+    
+        <div class="catalogo-container">
+            <!-- Catálogo de Otoño -->
+            <div class="catalogo" id="otoño">
+                <h3>Catálogo Otoño - Octubre</h3>
+                <h4>Descripcion</h4>
+                <p>Este catalogo provee la combinacion perfecta para el periodode otoño</p>
+                <p><strong>Precio:</strong> $200.00 MXN</p>
+                <div class="producto-lista">
+                    <div class="producto-item">
+                       
+                        <strong>Gafas:</strong> Gafas de color rojo
+                        <img src="./imagenes/Gafas de color Rojo.jpg" alt="">
+                    </div>
+                    <div class="producto-item">
+                        <strong>Pantalones:</strong> Oversize blue cian
+                        <img src="./imagenes/Oversize blue cian.jpg" alt="">
+                    </div>
+                    <div class="producto-item">
+                        <strong>Playera:</strong> Playera verde
+                        <img src="./imagenes/playera Verde.png" alt="">
+                    </div>
+                </div>
+                <div class="proveedor">
+                    <strong>Proveedores:</strong>
+                    <span>Laura Fonseca</span>
+                    <span>Juana Flores</span>
+                </div>
+            </div>
+    
+            <!-- Catálogo de Invierno -->
+            <div class="catalogo" id="invierno">
+                <h3>Catálogo Invierno - Diciembre</h3>
+                <h4>Descripcion</h4>
+                <p>Este catalogo provee la combinacion perfecta para el periodode Diciembre</p>
+                <p><strong>Precio:</strong> $200.00 MXN</p>
+                <div class="producto-lista">
+                    <div class="producto-item">
+                        <strong>Gafas:</strong> Gafas de color amarillo
+                        <img src="./imagenes/gafas de color amarillo.png" alt="">
+                    </div>
+                    <div class="producto-item">
+                        <strong>Pantalones:</strong> Oversize blue cian
+                        <img src="./imagenes/joggers cafe.png" alt="">
+                    </div>
+                    <div class="producto-item">
+                        <strong>Playera:</strong> Playera blanca
+                        <img src="./imagenes/playera blanca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="proveedor">
+                    <strong>Proveedores:</strong>
+                    <span>Karla Fonseca Hernandez</span>
+                </div>
+            </div>
+            <div>
+                Seccion de comentarios añadidos
+            </div>
+    
+            <!-- Catálogo de Año Nuevo -->
+            <div class="catalogo" id="ano-nuevo">
+                <h3>Catálogo Año Nuevo - Diciembre</h3>
+                <h4>Descripcion</h4>
+                <p>Este catalogo provee la combinacion perfecta para el año nuevo</p>
+                <p><strong>Precio:</strong> $200.00 MXN</p>
+                <div class="producto-lista">
+                    <div class="producto-item">
+                        <strong>Gafas:</strong> Gafas de sol
+                        <img src="./imagenes/Gafas de sol .png" alt="">
+                    </div>
+                    <div class="producto-item">
+                        <strong>Pantalones:</strong> Small fit jeans
+                        <img src="./imagenes/Small fit jeans.jpg" alt="">
+                    </div>
+                    <div class="producto-item">
+                        <strong>Playera:</strong> Playera naranja
+                        <img src="./imagenes/Playera naranja.png" alt="">
+                    </div>
+                </div>
+                <div class="proveedor">
+                    <strong>Proveedores:</strong>
+                    <span>Patricia Tampico Hernandez</span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Sección de comentarios -->
+        <div class="comment-section">
+            <h3>Deja tu comentario sobre nuestros productos:</h3>
+            <form id="commentForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </div>
+    
+
+    
+        <script src="./ejecucion.js"></script>
+    </body>
+</body>
+</html>
