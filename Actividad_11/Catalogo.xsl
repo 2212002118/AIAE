@@ -4,11 +4,11 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Catálogo de Productos</title>
+                <title>Catálogo de Productos de Vicente</title>
                 <link rel="stylesheet" type="text/css" href="styles.css"></link>
             </head>
             <body>
-                <h2>Catálogo de Productos</h2>
+                <h2>Catálogo de Productos de Vicente</h2>
                 <table border="1">
                     <thead>
                         <tr>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de XML</title>
+    <script>
+        function loadXML() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    displayXML(this);
+                }
+            };
+            xhttp.open("GET", "Vicente.xml", true);
+            xhttp.send();
+        }
+
+        function displayXML(xml) {
+            const xmlDoc = xml.responseXML;
+            const root = xmlDoc.getElementsByTagName("nodo_raiz")[0];
+            const output = document.getElementById("xmlContent");
+
+            // Procesar los nodos hijos del nodo raíz
+            const children = root.children;
+            for (let i = 0; i < children.length; i++) {
+                const node = children[i];
+                const item = document.createElement("div");
+
+                // Si el nodo tiene atributos, listarlos
+                if (node.attributes.length > 0) {
+                    const attrs = [];
+                    for (let j = 0; j < node.attributes.length; j++) {
+                        const attr = node.attributes[j];
+                        attrs.push(`${attr.name}: ${attr.value}`);
+                    }
+                    item.innerHTML = `<strong>${node.tagName}</strong> (Atributos: ${attrs.join(", ")}): ${node.textContent.trim()}`;
+                } else {
+                    item.innerHTML = `<strong>${node.tagName}</strong>: ${node.textContent.trim()}`;
+                }
+
+                output.appendChild(item);
+            }
+        }
+    </script>
+</head>
+<body onload="loadXML()">
+    <h1>Visualización de Archivo XML</h1>
+    <div id="xmlContent">
+        <!-- Aquí se mostrarán los datos del XML -->
+    </div>
+</body>
+</html>

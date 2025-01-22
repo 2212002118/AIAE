@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+</head>
+<body>
+    <h1>Catálogo de Productos</h1>
+    <h2>Actividad de Vicente</h2>
+    <div id="catalogo"></div>
+    <h2>Actividad de Javier</h2>
+    <div id="catalogo1"></div>
+
+    <script>
+        // Cargar y transformar XML con XSL
+        async function loadCatalog() {
+            const xmlResponse = await fetch('Catalogo.xml');
+            const xslResponse = await fetch('Catalogo.xsl');
+            const xml = await xmlResponse.text();
+            const xsl = await xslResponse.text();
+
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xml, 'application/xml');
+            const xslDoc = parser.parseFromString(xsl, 'application/xml');
+
+            if (window.XSLTProcessor) {
+                const xsltProcessor = new XSLTProcessor();
+                xsltProcessor.importStylesheet(xslDoc);
+                const resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+                document.getElementById('catalogo').appendChild(resultDocument);
+            } else {
+                document.getElementById('catalogo').innerText =
+                    'Tu navegador no soporta XSLT.';
+            }
+        }
+
+        async function loadCatalog1() {
+            const xmlResponse = await fetch('tercero.xml');
+            const xslResponse = await fetch('tercero.xsl');
+            const xml = await xmlResponse.text();
+            const xsl = await xslResponse.text();
+
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xml, 'application/xml');
+            const xslDoc = parser.parseFromString(xsl, 'application/xml');
+
+            if (window.XSLTProcessor) {
+                const xsltProcessor = new XSLTProcessor();
+                xsltProcessor.importStylesheet(xslDoc);
+                const resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+                document.getElementById('catalogo1').appendChild(resultDocument);
+            } else {
+                document.getElementById('catalogo1').innerText =
+                    'Tu navegador no soporta XSLT.';
+            }
+        }
+
+        loadCatalog();
+        loadCatalog1();
+    </script>
+</body>
+</html>
