@@ -1,0 +1,39 @@
+<!--Ejemplo-->
+<?xml 
+version="1.0"
+encoding="UTF-8"
+standalone="yes"
+?>
+
+<!--Práctica Ejemplo-->
+<!--Abajo esta el nodo raiz-->
+<nodo_raiz>
+    <!--Etiqueta Simple-->
+    <nombre> Vicente </nombre>
+    <!--Etiqueta con parametro-->
+    <carrera mat="2212002118"> Ingenieria en Computación</carrera>
+
+    <!--Etiqueta vacia 1-->
+    <nombre>  </nombre>
+    <!--Etiqueta vacia 2-->
+    <nombre/>
+
+    <!--Etiqueta con multiples atributos-->
+    <carrera mat="2212002118" pais="México" trimestre="9" edad="21">
+        Ing Computación
+    </carrera>
+    <!--
+    <!ENTITY PL "PT">
+    <TERM> Es necesarios el &PL;</TERM>
+    -->
+    <!--Etiqueta con caracteres especiales-->
+    <EtiquetaPredefinida>
+        Las unidades(U) de la UAM son: U&gt;2 &amp; U&lt;6. Algunas iniciales son: &quot;AZC&quot; &amp; &apos;CUA&apos; etc..
+    </EtiquetaPredefinida>
+
+    <!--Etiqueta con multiples vacia 1-->
+    <carrera mat="2212002118" pais="México" trimestre="9" edad="21"> </carrera>
+    <!--Etiqueta con multiples vacia 2-->
+    <carrera mat="2212002118" pais="México" trimestre="9" edad="21"/>
+
+</nodo_raiz>
