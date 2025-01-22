@@ -63,7 +63,6 @@ El contenido de este repositorio está protegido bajo una licencia académica y 
 ---
 
 **Autor:**  
-[Jose Vicente Lopez Lopez](https://github.com/2212002118)  
+[Jose Vicente Lopez Lopez](https://github.com/2212002118) 
+[Javier * Vera Flores](https://github.com/Javier-Vera-Flores) 
 ```
-
-Con este README tu proyecto en GitHub estará bien documentado y fácil de entender. Avísame si necesitas agregar algo más.
